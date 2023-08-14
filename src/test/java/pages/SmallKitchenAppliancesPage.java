@@ -39,7 +39,16 @@ package pages;
 		@FindBy(xpath ="//*[@id=\"messageBar\"]/div/a/span")  
 		public WebElement toptitle;
 		
-	
+	// Right Button
+		
+		@FindBy(xpath ="//*[@id=\"column_thd_d61e\"]/div/div/div[2]/div/div/div[3]/button")  
+		public WebElement rightbutton;
+		
+		@FindBy(xpath ="//*[@id=\"product-header_title_product-323845164\"]")  
+		public WebElement airflytitle;
+		
+		
+		
 		
 		public SmallKitchenAppliancesPage() {
 			driver = BrowserHelper.driver;
@@ -48,8 +57,8 @@ package pages;
 
 		public void loadPage() {
 			String currentURL = driver.getCurrentUrl();
-			if (currentURL != "https://www.homedepot.com/") {  
-				driver.get("https://www.homedepot.com/");
+			if (currentURL != "https://www.homedepot.com/b/Appliances-Small-Kitchen-Appliances/N-5yc1vZbv48") {  
+				driver.get("https://www.homedepot.com/b/Appliances-Small-Kitchen-Appliances/N-5yc1vZbv48");
 			}
 		}
 	}
