@@ -21,7 +21,7 @@ public class HomeDepotTopButtonDefinitions extends BrowserHelper {
 
 	@When("Click on Home Décor")
 	public void click_on_home_décor() {
-		SmallKitchenAppliancesPage hdskapage = new SmallKitchenAppliancesPage();
+		HomePage hdskapage = new HomePage();
 		hdskapage.homedecorlink.click();
 	}
 

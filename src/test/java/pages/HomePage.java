@@ -16,6 +16,10 @@ public class HomePage {
 	@FindBy(css ="a[title='The Home Depot']  title")
 	public WebElement hdtitle;
 	
+	
+	@FindBy(xpath = ".//*[@id=\"header\"]/div/div[4]/div/ul/li[2]/a")
+	public WebElement homedecorlink;
+	
 
 	public HomePage() {
 		driver = BrowserHelper.driver;

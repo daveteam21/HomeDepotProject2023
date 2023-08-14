@@ -11,9 +11,6 @@ package pages;
 		
 		WebDriver driver;
 		
-		@FindBy(xpath = ".//*[@id=\"header\"]/div/div[4]/div/ul/li[2]/a")
-		public WebElement homedecorlink;
-		
 		@FindBy(xpath ="//*[@id=\"ColumnRail_thd_20cf\"]/div/div[11]/nav/a")
 		public WebElement smallkitchenlink;
 		

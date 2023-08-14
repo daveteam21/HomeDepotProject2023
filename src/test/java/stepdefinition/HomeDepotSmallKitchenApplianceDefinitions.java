@@ -20,7 +20,7 @@ public class HomeDepotSmallKitchenApplianceDefinitions extends BrowserHelper{
 	}
 	@When("Click on Home Décor, Furniture, and Kitchenware.")
 	public void click_on_home_décor_furniture_and_kitchenware() {
-		SmallKitchenAppliancesPage hdskapage = new SmallKitchenAppliancesPage ();
+		HomePage hdskapage = new HomePage ();
 		hdskapage.homedecorlink.click();
 	}
 	@When("Click on Small Kitchen Appliances.")

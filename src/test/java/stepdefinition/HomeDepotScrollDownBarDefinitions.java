@@ -20,7 +20,7 @@ public class HomeDepotScrollDownBarDefinitions extends BrowserHelper {
 
 	@When("Click on Home Décor, Furniture")
 	public void click_on_home_décor_furniture() {
-		SmallKitchenAppliancesPage hdskapage = new SmallKitchenAppliancesPage();
+		HomePage hdskapage = new HomePage();
 		hdskapage.homedecorlink.click();
 	}
 
