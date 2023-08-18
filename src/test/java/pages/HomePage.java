@@ -20,6 +20,9 @@ public class HomePage {
 	@FindBy(xpath = ".//*[@id=\"header\"]/div/div[4]/div/ul/li[2]/a")
 	public WebElement homedecorlink;
 	
+	@FindBy(xpath = "//*[@id=\"header\"]/div[1]/div[4]/div/ul/li[6]/a")
+	public WebElement SpecialsAndOfferslink;
+	
 
 	public HomePage() {
 		driver = BrowserHelper.driver;
