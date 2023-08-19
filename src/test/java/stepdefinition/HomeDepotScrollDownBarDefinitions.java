@@ -18,8 +18,8 @@ public class HomeDepotScrollDownBarDefinitions extends BrowserHelper {
 		homepage.loadPage();
 	}
 
-	@When("Click on Home DÃ©cor, Furniture")
-	public void click_on_home_dÃ©cor_furniture() {
+	@When("Click on Home Décor, Furniture")
+	public void click_on_home_décor_furniture() {
 		HomePage hdskapage = new HomePage();
 		hdskapage.homedecorlink.click();
 	}
@@ -30,18 +30,19 @@ public class HomeDepotScrollDownBarDefinitions extends BrowserHelper {
 		skapage.smallkitchenlink.click();
 	}
 
-	@When("Scroll down to the bottom page.")
-	public void scroll_down_to_the_bottom_page() {
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		//js.executeScript("scroll(0,document.body.scrollHeight)", "");
-		js.executeScript("scroll(0,12574)", "");
-		
-	}
 
-	@Then("See copyright print.")
-	public void see_copyright_print() {
-		SmallKitchenAppliancesPage skapage = new SmallKitchenAppliancesPage();
-		Assert.assertEquals(skapage.copyrighttxt.getText(), "Â© 2000-2022 Home Depot. All Rights Reserved. Use of this site is subject to certain Terms Of Use.");
-		
-	}
+@When("Scroll down to the bottom page.")
+public void scroll_down_to_the_bottom_page() {
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	//js.executeScript("scroll(0,document.body.scrollHeight)", "");
+	js.executeScript("scroll(0,12574)", "");
+	
+}
+
+@Then("See copyright print.")
+public void see_copyright_print() {
+	SmallKitchenAppliancesPage skapage = new SmallKitchenAppliancesPage();
+	Assert.assertEquals(skapage.copyrighttxt.getText(), "© 2000-2022 Home Depot. All Rights Reserved. Use of this site is subject to certain Terms Of Use.");
+	
+}
 }

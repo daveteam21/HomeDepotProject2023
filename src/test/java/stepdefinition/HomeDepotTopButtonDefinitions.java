@@ -19,8 +19,8 @@ public class HomeDepotTopButtonDefinitions extends BrowserHelper {
 
 	}
 
-	@When("Click on Home DÃ©cor")
-	public void click_on_home_dÃ©cor() {
+	@When("Click on Home Décor")
+	public void click_on_home_décor() {
 		HomePage hdskapage = new HomePage();
 		hdskapage.homedecorlink.click();
 	}

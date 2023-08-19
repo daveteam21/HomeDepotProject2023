@@ -15,8 +15,8 @@ public class HomeDepotSuperSavingsBannerDefinitions {
 		HomePage homepage = new HomePage();
 		homepage.loadPage();
 	}
-	@When("Click on Home DÃ©cor, Furniture, and Kitchen.")
-	public void click_on_home_dÃ©cor_furniture_and_kitchen() {
+	@When("Click on Home Décor, Furniture, and Kitchen.")
+	public void click_on_home_décor_furniture_and_kitchen() {
 		HomePage hdskapage = new HomePage ();
 		hdskapage.homedecorlink.click();
 	}

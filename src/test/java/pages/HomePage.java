@@ -20,7 +20,13 @@ public class HomePage {
 	@FindBy(xpath = ".//*[@id=\"header\"]/div/div[4]/div/ul/li[2]/a")
 	public WebElement homedecorlink;
 	
-
+	@FindBy(xpath = "//input[@id='headerSearch']")
+	public WebElement searchbar;
+	
+	@FindBy(xpath = "//button[@id='headerSearchButton']")
+	public WebElement searchbarclick;
+	
+	
 	public HomePage() {
 		driver = BrowserHelper.driver;
 		PageFactory.initElements(driver, this); 
