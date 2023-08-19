@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>24/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 19 10:44:28 EDT 2023</td>
+<td>Started on:</td><td>Sat Aug 19 13:46:32 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>570 seconds (570737 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (936 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,275 +76,80 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to click on create a personal account and navigate to the personal account page.", "Home Depot Personal Account Functionality."</td>
-<td><div><pre>java.lang.AssertionError: expected [Personal Account] but found [Create an Account]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepdefinition.HomeDepotPersonalAccountDefinitions.navigate_to_the_create_a_personal_account_page(HomeDepotPersonalAccountDefinitions.java:23)
-	at ✽.navigate to the Create a Personal Account page.(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/HomeDepotPersonalAccount.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace736951628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace736951628'><pre>java.lang.AssertionError: expected [Personal Account] but found [Create an Account]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepdefinition.HomeDepotPersonalAccountDefinitions.navigate_to_the_create_a_personal_account_page(HomeDepotPersonalAccountDefinitions.java:23)
-	at ✽.navigate to the Create a Personal Account page.(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/HomeDepotPersonalAccount.feature:8)
-</pre></div></td>
-<td>28</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I like to sign up to receive a $5 promotional email and see the Thank you for signing up message.", "Home Depot Signup Email Promotion Functionality"</td>
-<td><div><pre>java.lang.AssertionError: expected [Thank you for signing up. Your first email should arrive shortly.] but found [Thank you for signing up.
-Your first email should arrive shortly.]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepdefinition.HomeDepotSignupEmailPromotionDefinitions.see_the_thank_you_for_signing_up_message(HomeDepotSignupEmailPromotionDefinitions.java:26)
-	at ✽.see the Thank you for signing up message.(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/HomeDepotSignupEmailPromotion.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1746468168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1746468168'><pre>java.lang.AssertionError: expected [Thank you for signing up. Your first email should arrive shortly.] but found [Thank you for signing up.
-Your first email should arrive shortly.]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepdefinition.HomeDepotSignupEmailPromotionDefinitions.see_the_thank_you_for_signing_up_message(HomeDepotSignupEmailPromotionDefinitions.java:26)
-	at ✽.see the Thank you for signing up message.(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/HomeDepotSignupEmailPromotion.feature:6)
-</pre></div></td>
-<td>18</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "trending videos", "DIY Projects and Ideas page"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1066)
-	at org.testng.Assert.assertEquals(Assert.java:1030)
-	at org.testng.Assert.assertEquals(Assert.java:1076)
-	at stepdefinition.TrendingVideosDefinition.video_starts_playing(TrendingVideosDefinition.java:28)
-	at ✽.video starts playing(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/TrendingVideos.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace731584462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace731584462'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1066)
-	at org.testng.Assert.assertEquals(Assert.java:1030)
-	at org.testng.Assert.assertEquals(Assert.java:1076)
-	at stepdefinition.TrendingVideosDefinition.video_starts_playing(TrendingVideosDefinition.java:28)
-	at ✽.video starts playing(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/TrendingVideos.feature:7)
-</pre></div></td>
-<td>6</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user wants to click the Super Savings Banner in the Small Kitchen and see only super-saving items.", "Home Depot Super Savings Banner Functionality"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img class=&quot;sponsored_banner_image--aewtr&quot; alt=&quot;sponsored banner&quot; src=&quot;https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/fetch/SuperSavings-RM-Banner-4565988-dsk.jpg&quot;&gt; is not clickable at point (5, 345). Other element would receive the click: &lt;div class=&quot;col__12-12&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=116.0.5845.96)
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a89f5d63879a7f61e25f7a328dcbaa6, clickElement {id=F1CAD96A5B8D38A7629D1D7391720BA2_element_683}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.96, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\davet\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62484}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62484/devtoo..., se:cdpVersion: 116.0.5845.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8a89f5d63879a7f61e25f7a328dcbaa6)] -&gt; css selector: img[alt=&apos;sponsored banner&apos;]]
-Session ID: 8a89f5d63879a7f61e25f7a328dcbaa6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
+<td title='runners.CucumberRunner.setUpClass()'><b>setUpClass</b><br>Test class: runners.CucumberRunner<br>Parameters: org.testng.TestRunner@463b4ac8</td>
+<td><div><pre>java.lang.IllegalArgumentException: path must exist: C:\Users\davet\eclipse-workspace\HomeDepotProject2023\src\test\resources\features\ClearHistory2.feature
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:49)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+	at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+	at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:122)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-	at stepdefinition.HomeDepotSuperSavingsBannerDefinitions.click_the_super_savings_banner(HomeDepotSuperSavingsBannerDefinitions.java:33)
-	at ✽.Click the Super Savings Banner(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/HomeDepotSuperSavingsBanner.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace23507230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace23507230'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img class=&quot;sponsored_banner_image--aewtr&quot; alt=&quot;sponsored banner&quot; src=&quot;https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/fetch/SuperSavings-RM-Banner-4565988-dsk.jpg&quot;&gt; is not clickable at point (5, 345). Other element would receive the click: &lt;div class=&quot;col__12-12&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=116.0.5845.96)
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a89f5d63879a7f61e25f7a328dcbaa6, clickElement {id=F1CAD96A5B8D38A7629D1D7391720BA2_element_683}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.96, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\davet\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62484}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62484/devtoo..., se:cdpVersion: 116.0.5845.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8a89f5d63879a7f61e25f7a328dcbaa6)] -&gt; css selector: img[alt=&apos;sponsored banner&apos;]]
-Session ID: 8a89f5d63879a7f61e25f7a328dcbaa6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2017797638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2017797638'><pre>java.lang.IllegalArgumentException: path must exist: C:\Users\davet\eclipse-workspace\HomeDepotProject2023\src\test\resources\features\ClearHistory2.feature
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:49)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+	at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+	at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:122)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-	at stepdefinition.HomeDepotSuperSavingsBannerDefinitions.click_the_super_savings_banner(HomeDepotSuperSavingsBannerDefinitions.java:33)
-	at ✽.Click the Super Savings Banner(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/HomeDepotSuperSavingsBanner.feature:6)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>21</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to click to clear all my recently viewed history items, so there are no recently viewed items", "Home Depot clear history  Functionality."</td>
-<td></td>
-<td>28</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to click on Wireless Routers to see all Smart Routers.", "Wireless Routers functionality"</td>
-<td></td>
-<td>21</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Backyard", "DIY Projects and Ideas page"</td>
-<td></td>
-<td>25</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Visit the DIY Projects and Ideas page", "DIY Projects and Ideas page"</td>
-<td></td>
-<td>12</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user can click right buttom of the Small Kitchen Appliances Savings banner, and see more saving items.", "Home Depot Right Button Functionality"</td>
-<td></td>
-<td>32</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DIY Wood Projects page visit", "DIY Projects and Ideas page"</td>
-<td></td>
-<td>9</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to click on Home Decor, Furniture, and Kitchenware and see all items related to home decor, furniture, and kitchenware.", "Home Depot Home Decor, Furniture, and Kitchenware Functionality"</td>
-<td></td>
-<td>14</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to check off Get It Fast Next-Days Delivery on home decor curtains and drapes and see all items for Next-Days Delivery.", "Home Depot Get It Fast Next-Days Delivery Functionality"</td>
-<td></td>
-<td>38</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Buying Guides", "DIY Projects and Ideas page"</td>
-<td></td>
-<td>14</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Buying Guides", "DIY Projects and Ideas page"</td>
-<td></td>
-<td>27</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I want to click on search bar to see all the history on recent view.", "Home Depot recent search functionlity"</td>
-<td></td>
-<td>15</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to search for a hammer and see all items related to the hammer displays only.", "Home Depot Search Functionality"</td>
-<td></td>
-<td>15</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to click on Smart Home to see Smart Devices for home.", "Smart Devices for Home functionality"</td>
-<td></td>
-<td>15</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to click on Help link on Home Depot home page to see if Help and Customer Service page opens.", "Help link functionality"</td>
-<td></td>
-<td>10</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to uncheck keep me signed in box when I create my personal account page", "Home Depot uncheck Keep me signed in box  Functionality"</td>
-<td></td>
-<td>7</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, I want to click on Create an Account and see personal and business account options.", "Home Depot Create Account Functionality"</td>
-<td></td>
-<td>19</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to click Home Depot Logo", "Home Depot Logo Functionality"</td>
-<td></td>
-<td>17</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to click on small Kitchen Appliances and see only kitchen-related products.", "Home Depot Small Kitchen Appliance"</td>
-<td></td>
-<td>20</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user I want to go shop today’s specials and see specials buy of the day item’s", "Home Depot  shop today’s special’s  functionality"</td>
-<td></td>
-<td>25</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user I want to go to specials and offers page from home page.", "Home depot specials and offers page functionality"</td>
-<td></td>
-<td>12</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user can scroll down to the bottom of the Small Kitchen Appliances page and see the copyright print.", "Home Depot Scroll Down Bar Functionality"</td>
-<td></td>
-<td>24</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user can click the top button at the bottom of the Small Kitchen Appliances page, and it will bring them back to the top page.", "Home Depot Top Button Functionality"</td>
-<td></td>
-<td>29</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user I want to go super savings page and see the super savings items", "Super savings page functionality"</td>
-<td></td>
-<td>16</td>
-<td>runners.CucumberRunner@353352b6</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Buying Guides", "DIY Projects and Ideas page"</td>
-<td></td>
-<td>12</td>
+<td>0</td>
 <td>runners.CucumberRunner@353352b6</td></tr>
 </table><p>
 </body>

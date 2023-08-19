@@ -1,575 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="28" passed="24" failed="4" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-19T10:44:28 EDT" name="Default suite" finished-at="2023-08-19T10:53:59 EDT" duration-ms="570737">
+  <suite started-at="2023-08-19T13:46:32 EDT" name="Default suite" finished-at="2023-08-19T13:46:33 EDT" duration-ms="936">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-08-19T10:44:28 EDT" name="Default test" finished-at="2023-08-19T10:53:59 EDT" duration-ms="570737">
+    <test started-at="2023-08-19T13:46:32 EDT" name="Default test" finished-at="2023-08-19T13:46:33 EDT" duration-ms="936">
       <class name="runners.CucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:44:28 EDT" name="setUpClass" finished-at="2023-08-19T10:44:54 EDT" duration-ms="26084" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T13:46:32 EDT" name="setUpClass" finished-at="2023-08-19T13:46:32 EDT" duration-ms="828" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2f60cbf2]]>
+                <![CDATA[org.testng.TestRunner@463b4ac8]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[path must exist: C:\Users\davet\eclipse-workspace\HomeDepotProject2023\src\test\resources\features\ClearHistory2.feature]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: path must exist: C:\Users\davet\eclipse-workspace\HomeDepotProject2023\src\test\resources\features\ClearHistory2.feature
+at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:49)
+at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:122)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:44:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:45:08 EDT" duration-ms="14515" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Buying Guides"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DIY Projects and Ideas page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:45:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:45:34 EDT" duration-ms="25704" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Backyard"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DIY Projects and Ideas page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:45:34 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:45:47 EDT" duration-ms="12753" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Buying Guides"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DIY Projects and Ideas page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:45:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:46:15 EDT" duration-ms="27844" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Buying Guides"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DIY Projects and Ideas page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:46:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:46:43 EDT" duration-ms="28147" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to click to clear all my recently viewed history items, so there are no recently viewed items"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot clear history  Functionality."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:46:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:46:53 EDT" duration-ms="9992" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["DIY Wood Projects page visit"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DIY Projects and Ideas page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:46:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:47:12 EDT" duration-ms="19216" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to click on Create an Account and see personal and business account options."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Create Account Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:47:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:47:50 EDT" duration-ms="38195" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to check off Get It Fast Next-Days Delivery on home decor curtains and drapes and see all items for Next-Days Delivery."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Get It Fast Next-Days Delivery Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:47:50 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:48:01 EDT" duration-ms="10370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to click on Help link on Home Depot home page to see if Help and Customer Service page opens."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Help link functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:48:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:48:15 EDT" duration-ms="14093" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to click on Home Decor, Furniture, and Kitchenware and see all items related to home decor, furniture, and kitchenware."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Home Decor, Furniture, and Kitchenware Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:48:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:48:32 EDT" duration-ms="17028" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User able to click Home Depot Logo"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Logo Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:48:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:49:01 EDT" duration-ms="28652" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to click on create a personal account and navigate to the personal account page."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Personal Account Functionality."]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Personal Account] but found [Create an Account]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Personal Account] but found [Create an Account]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at stepdefinition.HomeDepotPersonalAccountDefinitions.navigate_to_the_create_a_personal_account_page(HomeDepotPersonalAccountDefinitions.java:23)
-at ✽.navigate to the Create a Personal Account page.(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/HomeDepotPersonalAccount.feature:8)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:49:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:49:25 EDT" duration-ms="24656" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["The user can scroll down to the bottom of the Small Kitchen Appliances page and see the copyright print."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Scroll Down Bar Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:49:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:49:44 EDT" duration-ms="18487" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I like to sign up to receive a $5 promotional email and see the Thank you for signing up message."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Signup Email Promotion Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Thank you for signing up. Your first email should arrive shortly.] but found [Thank you for signing up.
-Your first email should arrive shortly.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Thank you for signing up. Your first email should arrive shortly.] but found [Thank you for signing up.
-Your first email should arrive shortly.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at stepdefinition.HomeDepotSignupEmailPromotionDefinitions.see_the_thank_you_for_signing_up_message(HomeDepotSignupEmailPromotionDefinitions.java:26)
-at ✽.see the Thank you for signing up message.(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/HomeDepotSignupEmailPromotion.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:49:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:50:04 EDT" duration-ms="20816" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["The user is able to click on small Kitchen Appliances and see only kitchen-related products."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Small Kitchen Appliance"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:50:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:50:20 EDT" duration-ms="15848" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to click on Smart Home to see Smart Devices for home."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Smart Devices for Home functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:50:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:50:42 EDT" duration-ms="21697" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["The user wants to click the Super Savings Banner in the Small Kitchen and see only super-saving items."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Super Savings Banner Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <img class="sponsored_banner_image--aewtr" alt="sponsored banner" src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/fetch/SuperSavings-RM-Banner-4565988-dsk.jpg"> is not clickable at point (5, 345). Other element would receive the click: <div class="col__12-12">...</div>
-  (Session info: chrome=116.0.5845.96)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a89f5d63879a7f61e25f7a328dcbaa6, clickElement {id=F1CAD96A5B8D38A7629D1D7391720BA2_element_683}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.96, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\davet\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62484}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62484/devtoo..., se:cdpVersion: 116.0.5845.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8a89f5d63879a7f61e25f7a328dcbaa6)] -> css selector: img[alt='sponsored banner']]
-Session ID: 8a89f5d63879a7f61e25f7a328dcbaa6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img class="sponsored_banner_image--aewtr" alt="sponsored banner" src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/fetch/SuperSavings-RM-Banner-4565988-dsk.jpg"> is not clickable at point (5, 345). Other element would receive the click: <div class="col__12-12">...</div>
-  (Session info: chrome=116.0.5845.96)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a89f5d63879a7f61e25f7a328dcbaa6, clickElement {id=F1CAD96A5B8D38A7629D1D7391720BA2_element_683}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.96, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\davet\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62484}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62484/devtoo..., se:cdpVersion: 116.0.5845.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8a89f5d63879a7f61e25f7a328dcbaa6)] -> css selector: img[alt='sponsored banner']]
-Session ID: 8a89f5d63879a7f61e25f7a328dcbaa6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-at stepdefinition.HomeDepotSuperSavingsBannerDefinitions.click_the_super_savings_banner(HomeDepotSuperSavingsBannerDefinitions.java:33)
-at ✽.Click the Super Savings Banner(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/HomeDepotSuperSavingsBanner.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:50:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:51:12 EDT" duration-ms="29549" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["The user can click the top button at the bottom of the Small Kitchen Appliances page, and it will bring them back to the top page."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Top Button Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:51:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:51:19 EDT" duration-ms="7688" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to uncheck keep me signed in box when I create my personal account page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot uncheck Keep me signed in box  Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:51:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:51:52 EDT" duration-ms="32739" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["The user can click right buttom of the Small Kitchen Appliances Savings banner, and see more saving items."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Right Button Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:51:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:52:07 EDT" duration-ms="15141" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["I want to click on search bar to see all the history on recent view."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot recent search functionlity"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:52:07 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:52:23 EDT" duration-ms="15657" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to search for a hammer and see all items related to the hammer displays only."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot Search Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:52:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:52:48 EDT" duration-ms="25070" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user I want to go shop today’s specials and see specials buy of the day item’s"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home Depot  shop today’s special’s  functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:52:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:53:01 EDT" duration-ms="12945" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user I want to go to specials and offers page from home page."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Home depot specials and offers page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:53:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:53:18 EDT" duration-ms="16977" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user I want to go super savings page and see the super savings items"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Super savings page functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:53:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:53:24 EDT" duration-ms="6222" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["trending videos"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DIY Projects and Ideas page"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1066)
-at org.testng.Assert.assertEquals(Assert.java:1030)
-at org.testng.Assert.assertEquals(Assert.java:1076)
-at stepdefinition.TrendingVideosDefinition.video_starts_playing(TrendingVideosDefinition.java:28)
-at ✽.video starts playing(file:///C:/Users/davet/eclipse-workspace/HomeDepotProject2023/src/test/resources/features/TrendingVideos.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:53:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:53:36 EDT" duration-ms="12102" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Visit the DIY Projects and Ideas page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DIY Projects and Ideas page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:53:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-19T10:53:58 EDT" duration-ms="21905" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a user, I want to click on Wireless Routers to see all Smart Routers."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Wireless Routers functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T10:53:58 EDT" name="tearDownClass" finished-at="2023-08-19T10:53:59 EDT" duration-ms="471" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CucumberRunner@353352b6]" started-at="2023-08-19T13:46:33 EDT" name="tearDownClass" finished-at="2023-08-19T13:46:33 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
