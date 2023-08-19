@@ -16,19 +16,22 @@ public class HomeDepotSuperSavingsBannerDefinitions {
 		homepage.loadPage();
 	}
 	@When("Click on Home Décor, Furniture, and Kitchen.")
-	public void click_on_home_décor_furniture_and_kitchen() {
+	public void click_on_home_décor_furniture_and_kitchen() throws InterruptedException {
 		HomePage hdskapage = new HomePage ();
 		hdskapage.homedecorlink.click();
+		Thread.sleep(2000);
 	}
 	@When("Click on Small Kitchen Appliance")
-	public void click_on_small_kitchen_appliance() {
+	public void click_on_small_kitchen_appliance() throws InterruptedException {
 		SmallKitchenAppliancesPage skapage = new SmallKitchenAppliancesPage ();
 		skapage.smallkitchenlink.click();
+		Thread.sleep(2000);
 	}
 	@When("Click the Super Savings Banner")
-	public void click_the_super_savings_banner() {
+	public void click_the_super_savings_banner() throws InterruptedException {
 		SmallKitchenAppliancesPage skapage = new SmallKitchenAppliancesPage ();
 		skapage.sponserbannerimg.click();
+		Thread.sleep(2000);
 	}
 	@Then("See only super-saving items.")
 	public void see_only_super_saving_items() {

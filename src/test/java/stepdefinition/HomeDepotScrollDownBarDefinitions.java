@@ -19,22 +19,25 @@ public class HomeDepotScrollDownBarDefinitions extends BrowserHelper {
 	}
 
 	@When("Click on Home Décor, Furniture")
-	public void click_on_home_décor_furniture() {
+	public void click_on_home_décor_furniture() throws InterruptedException {
 		HomePage hdskapage = new HomePage();
 		hdskapage.homedecorlink.click();
+		Thread.sleep(2000);
 	}
 
 	@When("Click on Small Kitchen Appliance.")
-	public void click_on_small_kitchen_appliance() {
+	public void click_on_small_kitchen_appliance() throws InterruptedException {
 		SmallKitchenAppliancesPage skapage = new SmallKitchenAppliancesPage();
 		skapage.smallkitchenlink.click();
+		Thread.sleep(2000);
 	}
 
 	@When("Scroll down to the bottom page.")
-	public void scroll_down_to_the_bottom_page() {
+	public void scroll_down_to_the_bottom_page() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		//js.executeScript("scroll(0,document.body.scrollHeight)", "");
 		js.executeScript("scroll(0,12574)", "");
+		Thread.sleep(2000);
 		
 	}
 

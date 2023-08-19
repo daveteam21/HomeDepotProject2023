@@ -20,15 +20,17 @@ public class HomeDepotTopButtonDefinitions extends BrowserHelper {
 	}
 
 	@When("Click on Home Décor")
-	public void click_on_home_décor() {
+	public void click_on_home_décor() throws InterruptedException {
 		HomePage hdskapage = new HomePage();
 		hdskapage.homedecorlink.click();
+		Thread.sleep(2000);
 	}
 
 	@When("Click on Small Kitchen Applian.")
-	public void click_on_small_kitchen_applian() {
+	public void click_on_small_kitchen_applian() throws InterruptedException {
 		SmallKitchenAppliancesPage skapage = new SmallKitchenAppliancesPage();
 		skapage.smallkitchenlink.click();
+		Thread.sleep(2000);
 
 	}
 
@@ -38,6 +40,7 @@ public class HomeDepotTopButtonDefinitions extends BrowserHelper {
 		js.executeScript("scroll(0,6000)", "");
 		Thread.sleep(2000);
 		js.executeScript("scroll(0,12574)", "");
+		Thread.sleep(2000);
 
 	}
 

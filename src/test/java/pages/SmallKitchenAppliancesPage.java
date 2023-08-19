@@ -18,12 +18,21 @@ package pages;
 		public WebElement titlepage;
 		
 	// Sponser Banner	
-		@FindBy(xpath ="//*[@id=\"default_banner_carousel\"]/a/img")
-		public WebElement sponserbannerimg;
+
+		//@FindBy(xpath ="//*[@id=\"default_banner_carousel\"]/a/img")
+		//public WebElement sponserbannerimg;
 		
 		@FindBy(xpath ="/html//div[@id='root']/div/div[3]/div[@class='col__12-12']/div[2]/div[@class='col__12-12']//h1[.='Super Savings ']")
-		public WebElement supersavingtxt;
+		public WebElement supersavingtxt; 
+		
+		
+		@FindBy(css ="img[alt='sponsored banner']")
+		public WebElement sponserbannerimg;
 	
+	
+				
+				
+				
 	// Scroll down
 		
 		@FindBy(css ="#footer [class] .u__legal:nth-child(1)")

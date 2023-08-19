@@ -13,8 +13,8 @@ public class Hooks {
 
 	}
 
-//	@AfterAll
-//	public static void after_all() {
-//		BrowserHelper.driver.close();
-//	}
+	@AfterAll
+	public static void after_all() {
+	BrowserHelper.driver.close();
+	}
 }

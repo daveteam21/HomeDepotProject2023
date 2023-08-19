@@ -1,6 +1,5 @@
-package stepdefinition;
+	package stepdefinition;
 
-import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
